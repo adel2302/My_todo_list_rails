@@ -1,2 +1,8 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<h1>Mon évènement</h1>
+<%= form_tag "/events/show/#{@event.id}", method: "patch" do %>
+  <p>Date:<input type="text" name="date" value="<%= @event.date %>"/></p>
+  <p>Heure:<input type="text" name="time" value="<%= @event.time %>"/></p>
+  <p>Titre:<input type="text" name="title" value="<%= @event.title %>"/></p>
+  <p>Evènement:<input type="text" name="content" value="<%= @event.content %>"/></p>
+  <input type="submit" value="Modifier"/>
+<% end %>

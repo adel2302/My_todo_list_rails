@@ -10,7 +10,7 @@
 <h1>A faire</h1>
 <% @events.each do |event| %>
   <p><%= event.date %> <%= event.time %></p>
-  <p><%= event.title %></p>
+  <p><a href="/events/show/<%= event.id %>"><%= event.title %></a></p>
   <p><%= event.content %></p>
 <% end %>
 
