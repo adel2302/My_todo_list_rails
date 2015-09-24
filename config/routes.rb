@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'events#home'
+  post 'events/home' => 'events#create'
 
   get 'events/show' 
 
