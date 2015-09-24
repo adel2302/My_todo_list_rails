@@ -6,3 +6,7 @@
   <p>Evènement:<input type="text" name="content" value="<%= @event.content %>"/></p>
   <input type="submit" value="Modifier"/>
 <% end %>
+
+<%= form_tag "/events/show/#{@event.id}", method: "delete" do %>
+	 <input type='submit' value='Supprimer'>
+<% end %>

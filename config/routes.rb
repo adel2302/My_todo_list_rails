@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get 'events/show/:id' => 'events#show'
   patch 'events/show/:id' => 'events#update'
+  delete 'events/show/:id' => 'events#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
